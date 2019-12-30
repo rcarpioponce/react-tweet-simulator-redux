@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 
 import Menu from "./components/Menu";
 import Modal from "./components/Modal";
+import FormAddTweet from "./components/FormAddTweet";
 //import store
 import store from "./store";
 import { Provider } from "react-redux";
@@ -14,7 +15,9 @@ export default function App() {
       <Container className="mt-5">
         <h1 className="text-center">TWEETS</h1>
       </Container>
-      <Modal>Formulario para añadir tweet</Modal>
+      <Modal>
+        <FormAddTweet />
+      </Modal>
     </Provider>
   );
 }

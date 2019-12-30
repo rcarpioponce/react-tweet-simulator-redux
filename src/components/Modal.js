@@ -21,7 +21,7 @@ export default function Modal(props) {
   const isOpenModal = useSelector(state => state.modals.stateModalAddTweet);
 
   return (
-    <ModalB show={isOpenModal} onHide={closeModal} size="lg">
+    <ModalB show={isOpenModal} onHide={closeModal}>
       {children}
     </ModalB>
   );
